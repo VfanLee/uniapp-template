@@ -1,0 +1,12 @@
+node_modules/
+dist/
+
+.vscode
+.idea
+.local
+
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+src/static/
