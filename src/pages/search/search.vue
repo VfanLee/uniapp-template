@@ -1,15 +1,15 @@
 <template>
   <view class="search-page">
-    <uni-search-bar
+    <wd-search
       v-model="searchValue"
-      :focus="true"
-      @confirm="search"
-      @blur="blur"
       @focus="focus"
-      @input="input"
-      @cancel="cancel"
+      @blur="blur"
+      @search="search"
       @clear="clear"
-    ></uni-search-bar>
+      @cancel="cancel"
+      @change="change"
+      maxlength="10"
+    />
   </view>
 </template>
 
@@ -25,7 +25,7 @@ const search = (res: { value: string }) => {
   })
 }
 
-const input = (res: { value: string }) => {
+const change = (res: { value: string }) => {
   console.log('----input:', res)
 }
 
@@ -57,5 +57,3 @@ const cancel = (res: { value: string }) => {
   })
 }
 </script>
-
-<style lang="scss" scoped></style>

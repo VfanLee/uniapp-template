@@ -2,3 +2,12 @@ view,
 text {
   box-sizing: border-box;
 }
+
+page {
+  background-color: #f8f9fa;
+}
+
+// https://github.com/Moonofweisheng/wot-design-uni/blob/master/src/uni_modules/wot-design-uni/components/common/abstracts/variable.scss
+page {
+  --wot-color-theme: #07c160;
+}

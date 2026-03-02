@@ -1,11 +1,14 @@
 <template>
   <view class="custom-navbar">
-    <view class="custom-navbar__wrap page-bg">
+    <view class="custom-navbar__wrap">
       <view class="custom-navbar-status" :style="{ height: `${statusBarHeight}px` }"></view>
       <view class="custom-navbar-title" :style="{ height: `${titleBarHeight}px` }">
         <view class="title">uniapp template</view>
+        <view class="divider">|</view>
+        <view class="sub-title">by "Vfan Lee"</view>
       </view>
     </view>
+    <view class="custom-navbar__placeholder" :style="{ height: `${statusBarHeight + titleBarHeight}px` }" />
   </view>
 </template>
 
@@ -24,17 +27,20 @@ const titleBarHeight = getTitleBarHeight()
     left: 0;
     z-index: 1000;
     width: 100%;
-    background-color: #2979ff;
+    background-color: #07c160;
   }
 
   &-title {
     display: flex;
     align-items: center;
     gap: 16rpx;
-    padding: 0 20rpx;
+    padding: 0 24rpx;
     color: #fff;
     .title {
-      font-size: 32rpx;
+      font-size: 36rpx;
+    }
+    .sub-title {
+      font-size: 24rpx;
     }
   }
 }
