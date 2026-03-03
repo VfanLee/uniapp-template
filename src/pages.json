@@ -47,7 +47,7 @@
     }
   ],
   "tabBar": {
-    "custom": true,
+    "custom": true, // 使用自定义 tabBar
     "list": [
       {
         "pagePath": "pages/index/index",
