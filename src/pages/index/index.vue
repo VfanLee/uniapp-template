@@ -17,14 +17,16 @@
     </view>
 
     <view class="grid-example">
-      <wd-grid :column="3">
-        <wd-grid-item icon="picture" text="文字" />
-        <wd-grid-item icon="picture" text="文字" />
-        <wd-grid-item icon="picture" text="文字" />
-        <wd-grid-item icon="picture" text="文字" />
-        <wd-grid-item icon="picture" text="文字" />
-        <wd-grid-item icon="picture" text="文字" />
-      </wd-grid>
+      <wd-card>
+        <wd-grid :column="3">
+          <wd-grid-item icon="picture" text="文字" />
+          <wd-grid-item icon="picture" text="文字" />
+          <wd-grid-item icon="picture" text="文字" />
+          <wd-grid-item icon="picture" text="文字" />
+          <wd-grid-item icon="picture" text="文字" />
+          <wd-grid-item icon="picture" text="文字" />
+        </wd-grid>
+      </wd-card>
     </view>
 
     <view class="card-example">
@@ -60,7 +62,8 @@ const swiperList = ref([
   --wot-swiper-item-padding: 0 24rpx;
   --wot-swiper-nav-dot-color: #e7e7e7;
   --wot-swiper-nav-dot-active-color: #07c160;
-  margin: 48rpx 0;
+  margin-top: 24rpx;
+  padding-bottom: 24rpx;
   :deep(.custom-indicator-class) {
     bottom: -16px;
   }
@@ -73,11 +76,6 @@ const swiperList = ref([
 }
 
 .grid-example {
-  margin: 48rpx 0;
-}
-
-:deep(.loadmore) {
-  background-color: #f4f4f4;
-  margin: 20px 0;
+  margin-top: 24rpx;
 }
 </style>
