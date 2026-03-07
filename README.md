@@ -6,8 +6,8 @@
 
 ## 核心技术
 
-- [uni-app](https://uniapp.dcloud.net.cn/)
-- [Wot UI](https://wot-ui.cn/)
+- [uniapp](https://uniapp.dcloud.net.cn/)
+- [wot-ui](https://wot-ui.cn/)
 - Typescript
 - Vue3
 - Vite
