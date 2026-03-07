@@ -20,6 +20,8 @@ const titleBarHeight = getTitleBarHeight()
 </script>
 
 <style lang="scss" scoped>
+@import '@/uni.scss';
+
 .custom-navbar {
   &__wrap {
     position: fixed;
@@ -27,7 +29,7 @@ const titleBarHeight = getTitleBarHeight()
     left: 0;
     z-index: 1000;
     width: 100%;
-    background-color: #07c160;
+    background-color: $uni-color-primary;
   }
 
   &-title {

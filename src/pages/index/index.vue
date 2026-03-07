@@ -42,6 +42,7 @@
 </template>
 
 <script setup lang="ts">
+import { onShow } from '@dcloudio/uni-app'
 import CustomNavbar from '@/components/custom-navbar/custom-navbar.vue'
 import { ref } from 'vue'
 
@@ -54,14 +55,23 @@ const swiperList = ref([
   'https://wot-ui.cn/assets/moon.jpg',
   'https://wot-ui.cn/assets/meng.jpg',
 ])
+
+onShow(() => {
+  uni.pageScrollTo({
+    scrollTop: 0,
+    duration: 0,
+  })
+})
 </script>
 
 <style lang="scss" scoped>
+@import '@/uni.scss';
+
 .swiper-example {
   --wot-swiper-radius: 0;
   --wot-swiper-item-padding: 0 24rpx;
   --wot-swiper-nav-dot-color: #e7e7e7;
-  --wot-swiper-nav-dot-active-color: #07c160;
+  --wot-swiper-nav-dot-active-color: #{$uni-color-primary};
   margin-top: 24rpx;
   padding-bottom: 24rpx;
   :deep(.custom-indicator-class) {

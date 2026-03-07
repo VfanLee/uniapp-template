@@ -13,9 +13,17 @@
 </template>
 
 <script lang="ts" setup>
+import { onShow } from '@dcloudio/uni-app'
 import { ref } from 'vue'
 
 const value = ref('')
+
+onShow(() => {
+  uni.pageScrollTo({
+    scrollTop: 0,
+    duration: 0,
+  })
+})
 </script>
 
 <style lang="scss" scoped>

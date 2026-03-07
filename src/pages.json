@@ -32,31 +32,10 @@
       }
     },
     {
-      "path": "pages/search/search",
-      "style": {
-        "navigationStyle": "default",
-        "navigationBarTitleText": "搜索"
-      }
-    },
-    {
       "path": "pages/login/login",
       "style": {
         "navigationStyle": "default",
         "navigationBarTitleText": "登录"
-      }
-    },
-    {
-      "path": "pages/privacy/privacy",
-      "style": {
-        "navigationStyle": "default",
-        "navigationBarTitleText": "隐私政策"
-      }
-    },
-    {
-      "path": "pages/service/service",
-      "style": {
-        "navigationStyle": "default",
-        "navigationBarTitleText": "用户服务协议"
       }
     }
   ],
